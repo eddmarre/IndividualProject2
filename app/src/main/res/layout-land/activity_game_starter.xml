@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android" > <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/purplebackground"
+    tools:context=".GameStarter">
+
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="@string/what_color_is_a_banana"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:freezesText="true"
+        />
+    <RadioGroup
+        android:id="@+id/rbGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="75dp"
+        android:layout_below="@+id/textViewQuestion"
+        android:layout_marginTop="50dp">
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option1"
+            android:textSize="20sp"
+            android:freezesText="true"
+            />
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option2"
+            android:textSize="20sp"
+            android:freezesText="true"
+            />
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option3"
+            android:textSize="20sp"
+            android:freezesText="true"
+            />
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/option4"
+            android:textSize="20sp"
+            android:freezesText="true"
+            />
+
+    </RadioGroup>
+<TextView
+    android:id="@+id/textViewScore"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/score_0"
+    android:textColor="#000000"
+    android:freezesText="true"
+    />
+    <TextView
+        android:id="@+id/textViewQuestionCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/question_1_x"
+        android:textColor="#000000"
+        android:layout_below="@+id/textViewScore"
+        android:freezesText="true"/>
+
+    <TextView
+        android:id="@+id/textViewCountDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="@string/_00_30"
+        android:layout_alignParentEnd="true"
+        android:textColor="#000000"
+        android:freezesText="true"/>
+    <Button
+        android:id="@+id/buttonConfirmNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm"
+        android:layout_below="@+id/rbGroup"
+        android:layout_marginTop="16dp"
+        android:freezesText="true"
+        />
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>
